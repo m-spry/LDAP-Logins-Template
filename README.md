@@ -1,13 +1,15 @@
 # LDAP-Logins-Template
 Just a barebones LDAP login page
 
-WHAT THIS IS:
+## WHAT THIS IS:
+
 This file contains a barebones template login page that connects to a LDAP server to authorise a login
 It has some basic logic for catching the number of login attempts.
 You may want to expand upon this yourself but its outside the scope of this file
 You can also expand upon on this using some XHR and CSS
 
-HOW TO USE / IMPORTANT TO KNOW:
+## HOW TO USE / IMPORTANT TO KNOW:
+
 You must enable ldap in your php.ini as well as configured ldap.conf to use TLS_CACERT.
 If you don't want to setup the TLS certificate enter "TLS_REQCERT never" in your ldap.conf
 If using a Windows Server you must install OpenLDAP and create the directory C:\OpenLDAP\sysconf\ to place your ldap.conf file
